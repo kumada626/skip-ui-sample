@@ -1,0 +1,7 @@
+shared:
+  image: node:10
+jobs:
+  job1:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - echo: echo 'Job1'
